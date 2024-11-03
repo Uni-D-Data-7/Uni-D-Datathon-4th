@@ -3,7 +3,7 @@
 
 ### 실행 방법
 `finetuning.ipynb` 파일만을 사용하여 실행합니다. 필요한 라이브러리는 파일 내 코드 셀에서 import하도록 작성되어 있습니다.
-`fine_tuned_PSNRloss_15epoch.pth` 가 훈련된 모델입니다.
+[`fine_tuned_PSNRloss_15epoch.pth`](https://drive.google.com/file/d/1E3jVcWDwiuTZe0pG1LywTUOZ084SiLMI/view?usp=sharing) 가 훈련된 모델입니다.
 
 - **학습 환경**: Google Colab에서 A100 GPU 사용하여 훈련하였습니다.
 - 사전학습된 [**Reformer**](https://openaccess.thecvf.com/content/CVPR2022/papers/Zamir_Restormer_Efficient_Transformer_for_High-Resolution_Image_Restoration_CVPR_2022_paper.pdf) 모델을 파인튜닝하였습니다. Training 시 Reformer의 모델 중 `single_image_defocus_deblurring.pth` 모델을 사용합니다. 해당 논문의 깃허브에서 모델을 다운로드하여 로드한 뒤, 파인튜닝을 진행합니다.
